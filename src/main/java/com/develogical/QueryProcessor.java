@@ -9,7 +9,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
         if (query.toLowerCase().contains("snorlax")) {
-            return "Snorlax is the best pokemon that exists.";
+            return "Snorlax is the best Pokemon that exists.";
         }
         return "";
     }
