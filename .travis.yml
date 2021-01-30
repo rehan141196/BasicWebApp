@@ -5,4 +5,4 @@ script: mvn clean verify
 deploy:
   provider: heroku
   api_key: 9468d16a-9a8f-49a4-a444-f18af496e20e
-
+  app: sleeping-snorlax
