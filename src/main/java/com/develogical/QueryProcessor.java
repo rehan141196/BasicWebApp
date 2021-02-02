@@ -8,8 +8,11 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
-        if (query.toLowerCase().contains("snorlax")) {
+        else if (query.toLowerCase().contains("snorlax")) {
             return "Snorlax is the best Pokemon that exists.";
+        }
+        else if (query.toLowerCase().contains("what is your name")) {
+        	return "Sleeping Snorlax"
         }
         return "";
     }
