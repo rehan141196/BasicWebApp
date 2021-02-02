@@ -18,7 +18,7 @@ public class QueryProcessor {
     		return max.toString();
     	}
     	else if (query.toLowerCase().contains("multiplied")) {
-    		Integer x = Integer.parseInt(elems[2])*Integer.parseInt((elems[4]));
+    		Integer x = Integer.parseInt(elems[2])*Integer.parseInt((elems[5]));
     		return x.toString();
     	}
         else if (query.toLowerCase().contains("shakespeare")) {
