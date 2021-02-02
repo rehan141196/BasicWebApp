@@ -51,6 +51,10 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("banana")) {
             return "yellow";
         }
+        else if (query.toLowerCase().contains("minus")) {
+        	Integer x = Integer.parseInt(elems[2])-Integer.parseInt((elems[4]));
+    		return x.toString();
+        }
         return "";
     }
 }
