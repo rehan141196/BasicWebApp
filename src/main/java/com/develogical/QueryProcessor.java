@@ -24,6 +24,7 @@ public class QueryProcessor {
     	else if (query.toLowerCase().contains("square")) {
     		Integer x = 64;
     		return x.toString();
+    	}
     	else if (query.toLowerCase().contains("theresa")) {
             return "2016";
         }
