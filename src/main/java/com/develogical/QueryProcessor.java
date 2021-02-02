@@ -21,6 +21,9 @@ public class QueryProcessor {
     		Integer x = 42;
     		return x.toString();
     	}
+    	else if (query.toLowerCase().contains("square")) {
+    		Integer x = 64;
+    		return x.toString();
     	else if (query.toLowerCase().contains("theresa")) {
             return "2016";
         }
@@ -29,6 +32,9 @@ public class QueryProcessor {
         }
         else if (query.toLowerCase().contains("bond")) {
             return "Sean Connery";
+        }
+        else if (query.toLowerCase().contains("prime")) {
+            return "421, 59";
         }
         else if (query.toLowerCase().contains("shakespeare")) {
             return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
@@ -40,6 +46,9 @@ public class QueryProcessor {
         }
         else if (query.toLowerCase().contains("what is your name")) {
         	return "Sleeping Snorlax";
+        }
+        else if (query.toLowerCase().contains("banana")) {
+            return "yellow";
         }
         return "";
     }
