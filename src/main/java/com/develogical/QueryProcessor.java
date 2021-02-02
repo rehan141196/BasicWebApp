@@ -1,9 +1,23 @@
 package com.develogical;
 
+// import java.lang.Math
+
 public class QueryProcessor {
 
     public String process(String query) {
-        if (query.toLowerCase().contains("shakespeare")) {
+
+    	String[] elems = query.toLowerCase().split(("\\s*(=>|,|\\s)\\s*"))
+    	if(elems[0].equals("what") && elems[3].equals("plus")) {
+    		Integer x = Integer.parseInt(elems[2])+Integer.parseInt((elems[4));
+    		return x.toString();
+    	}
+    	else if (elems[0].equals("which")) {
+    		Integer a = Integer.parseInt(elems[elems.length-1]);
+    		Integer b = Integer.parseInt(elems[elems.length-2]);
+    		Integer max = Math.max(a,b);
+    		return max;
+    	}
+        else if (query.toLowerCase().contains("shakespeare")) {
             return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
@@ -14,6 +28,7 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("what is your name")) {
         	return "Sleeping Snorlax";
         }
+        else if (q)
         return "";
     }
 }
