@@ -12,7 +12,7 @@ public class QueryProcessor {
             return "Snorlax is the best Pokemon that exists.";
         }
         else if (query.toLowerCase().contains("what is your name")) {
-        	return "Sleeping Snorlax"
+        	return "Sleeping Snorlax";
         }
         return "";
     }
