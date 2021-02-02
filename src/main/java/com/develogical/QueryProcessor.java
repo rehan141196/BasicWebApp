@@ -15,7 +15,7 @@ public class QueryProcessor {
     		Integer a = Integer.parseInt(elems[elems.length-1]);
     		Integer b = Integer.parseInt(elems[elems.length-2]);
     		Integer max = Math.max(a,b);
-    		return max;
+    		return max.toString();
     	}
         else if (query.toLowerCase().contains("shakespeare")) {
             return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
@@ -28,7 +28,6 @@ public class QueryProcessor {
         else if (query.toLowerCase().contains("what is your name")) {
         	return "Sleeping Snorlax";
         }
-        else if (q)
         return "";
     }
 }
