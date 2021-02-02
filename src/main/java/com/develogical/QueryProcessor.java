@@ -6,9 +6,9 @@ public class QueryProcessor {
 
     public String process(String query) {
 
-    	String[] elems = query.toLowerCase().split(("\\s*(=>|,|\\s)\\s*"))
+    	String[] elems = query.toLowerCase().split(("\\s*(=>|,|\\s)\\s*"));
     	if(elems[0].equals("what") && elems[3].equals("plus")) {
-    		Integer x = Integer.parseInt(elems[2])+Integer.parseInt((elems[4));
+    		Integer x = Integer.parseInt(elems[2])+Integer.parseInt((elems[4]));
     		return x.toString();
     	}
     	else if (elems[0].equals("which")) {
